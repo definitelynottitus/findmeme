@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/1.27.0/luxon.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@0.2.1"></script>
+<script src="index.js"></script>
+<link rel="stylesheet" href="index.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findmeme</title>
+</head>
+<body>
+    <div class="flexbox-container">
+
+        <div class="flexbox-item-1 loader">
+            <canvas id="lineChart" class="movingAvg"></canvas>
+        </div>
+        <div class="flexbox-item-2">
+            <article id='faq'>
+                <h3>What is this graph about?</h2>
+                <p id = 'test'>This graph shows the hourly average Karma Point of the Reddit posts split 
+                    between Jpg/Gif images from the hot tab of the 
+                    <a href="https://www.reddit.com/r/dankmemes/" target="_blank">r/dankmemes</a> subreddit. 
+                </p>
+                <h3>How is this calculated?</h2>
+                <p>It first looks at the 7 days most recent dankmemes hot posts. 
+                    Then it uses <a href="https://en.wikipedia.org/wiki/Moving_average" target="_blank">
+                        cumulative moving average</a> to calculate the mean of 
+                    hourly posts from that time period.
+                </p>
+                <h3>What can this be used for?</h2>
+                <p>Give insights into the trend of posting either animated or still memes into r/dankmemes. 
+                    Other than that, not much at its current stage honestly. However, this will serve as a 
+                    foundation for me to build and add more feature to this website</p>
+                <h3>So, why does this exist?</h2>
+                <p>I don't know. The reason is probably a mix of boredom and a tad of immaturity.</p>
+                <h3>Can I tell you this dank feature you can include?</h2>
+                <P>Sure fam, send me an email at admin@findmeme.cc</P>
+            </article>
+        </div>
+        <div class="flexbox-item-3">
+            <hr>
+            <p>This is website is a side project developed by Titus. 
+                Please contact me at admin@findmeme.cc for any questions 
+                or inquiries</p>
+        </div>
+    </div>
+</body>
+</html>

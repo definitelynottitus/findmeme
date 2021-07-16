@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+.flexbox-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:'Open Sans',sans-serif;
+}
+
+
+.flexbox-item-1{
+    position:relative;
+    margin:30px;
+    height:60vh;
+    width:80vw;
+    border:1px solid #000;
+    transition: all 0.2s;
+    color: red;
+}
+
+.flexbox-item-2 {
+    margin: 20px;
+    width:80vw;
+}
+
+.flexbox-item-3{
+    font-size:11px;
+    text-align:center;
+}
+
+.errorText {
+    text-align: center;
+    font-size: 40px;
+}
+
+.loader .movingAvg{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.loader::after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    border: 10px solid transparent;
+    border-top-color: teal;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
